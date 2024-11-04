@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Atualizado para v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Atualizado para v3
         with:
           node-version: '16'
 
@@ -27,3 +27,4 @@ jobs:
 
       - name: Run starships test
         run: npx jest swapi.test.js -t 'starships'
+
